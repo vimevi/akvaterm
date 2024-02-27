@@ -1,0 +1,94 @@
+.btn {
+	transition: opacity 0.3s;
+	font-family: 'Gilroy Bold';
+	color: white;
+	background: #639ee4;
+	border-radius: 50px;
+	padding: 14px 44px 16px 48px;
+	font-size: 20px;
+	display: flex;
+	margin: 0 auto;
+	span {
+		padding-left: 20px;
+		transition: transform 0.3s ease-out;
+	}
+}
+.btn:hover {
+	opacity: 0.9;
+	span {
+		transform: translateX(8px);
+	}
+}
+.homeGreeting {
+	// transition: all 0.3s;
+	position: relative;
+	margin-bottom: 520px;
+}
+.discount {
+	position: relative;
+}
+.discount::after,
+.discount::before {
+	content: '';
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+	bottom: -240px;
+	right: 538px;
+	bottom: -240px;
+	right: -200px;
+	width: 100%;
+}
+.discount::after {
+	background: url('./assets/discount-text.svg') no-repeat center center;
+	animation: rotate 12s linear infinite;
+}
+.discount::before {
+	content: '';
+	background: url('./assets/discount.svg') no-repeat center center;
+}
+.homeGreeting::before {
+	content: '';
+	position: absolute;
+	background: url('./assets/background.jpg') no-repeat center center;
+	height: 84vh;
+	width: 100%;
+	z-index: -2;
+	right: 0;
+	filter: blur(0px);
+}
+// .homeGreeting::after {
+// 	content: '';
+// 	position: absolute;
+// 	background: url('../../assets/images/Union.png') no-repeat center center;
+// 	// background-size: cover; /* добавлено */
+// 	height: 84vh;
+// 	width: 100%;
+// 	z-index: -1;
+// 	right: 0;
+// 	top: -22px;
+// 	filter: blur(0px);
+// }
+
+.title {
+	font-size: 58px;
+	text-align: center;
+	padding-top: 100px;
+	color: #639ee4;
+	font-family: 'Rostov';
+	text-transform: uppercase;
+	margin-bottom: 26px;
+	span {
+		color: #ff7889;
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}

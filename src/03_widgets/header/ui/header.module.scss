@@ -1,0 +1,78 @@
+.header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 100;
+	-webkit-box-shadow: -1px 6px 39px -20px rgba(34, 60, 80, 0.16);
+	-moz-box-shadow: -1px 6px 39px -20px rgba(34, 60, 80, 0.16);
+	box-shadow: -1px 6px 39px -20px rgba(34, 60, 80, 0.16);
+	z-index: 10;
+}
+.logo {
+	cursor: pointer;
+	width: 50px;
+}
+.headerContent {
+	padding: 0 5%;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.navContent {
+	display: flex;
+	gap: 18px;
+	position: relative;
+}
+.navBox {
+	justify-self: center;
+}
+.profileBox {
+	position: relative;
+}
+
+.navEl {
+	cursor: pointer;
+	padding: 6px;
+	transition: all 0.3s;
+}
+.navEl:hover {
+	// opacity: 0.8;
+	background-color: #a6bad2;
+	border-radius: 5px;
+	color: white;
+}
+.activeEl::after {
+	content: '';
+	width: 19px;
+	height: 3px;
+	position: absolute;
+	background-color: #a6bad2;
+	border-radius: 2px;
+	bottom: 0px;
+	left: 6px;
+}
+
+.profileItem1::after,
+.profileItem2::after,
+.profileItem3::after {
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	top: -16px;
+}
+.profileItem1::after {
+	background: url('./assets/search.svg') no-repeat center;
+	right: 160px;
+}
+.profileItem2::after {
+	background: url('./assets/profile.svg') no-repeat center;
+	right: 100px;
+}
+.profileItem3::after {
+	background: url('./assets/shopping-cart.svg') no-repeat center;
+	right: 40px;
+}

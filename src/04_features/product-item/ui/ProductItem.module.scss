@@ -1,0 +1,78 @@
+p {
+	margin: 0;
+}
+.productItem {
+	position: relative;
+	border: 6px solid #f7f8fb;
+	width: 301px;
+	border-radius: 30px;
+	font-family: 'Inter Regular';
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	padding: 0;
+	font-size: 18px;
+}
+.like:after {
+	content: '';
+	background: url('./assets/like.svg') center no-repeat;
+	width: 22px;
+	height: 22px;
+	top: 16px;
+	left: 248px;
+	position: absolute;
+	cursor: pointer;
+}
+.infoBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+.infoBox span {
+	font-family: 'Inter Bold';
+	font-size: 24px;
+	color: #414141;
+}
+.article {
+	color: #313131;
+	opacity: 0.4;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 6px;
+}
+
+.btnBox {
+	// padding: 0 10px;
+	padding-top: 14px;
+}
+
+.btnMore {
+	border: 1px solid #639ee4;
+	color: #639ee4;
+	background-color: white;
+	padding: 12px 30px;
+	width: 50%;
+	font-size: 14px;
+	border-radius: 0 0 0 20px;
+}
+
+.btnBuy {
+	border: 1px solid #639ee4;
+	color: white;
+	background-color: #639ee4;
+	padding: 12px 30px;
+	width: 50%;
+	font-size: 14px;
+	border-radius: 0 0 20px 0;
+	transition: all 0.3s;
+}
+.btnBuy:hover {
+	opacity: 0.8;
+}
+.btnMore:hover {
+	opacity: 0.8;
+}

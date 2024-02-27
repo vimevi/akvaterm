@@ -1,0 +1,58 @@
+.footer {
+	background-color: #639ee4;
+	color: white;
+	padding: 33px 0 66px;
+}
+
+.footerContainer {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.navMenu {
+	display: flex;
+	gap: 20px;
+	white-space: nowrap;
+	font-weight: 700;
+}
+
+.topFooter {
+	display: flex;
+	gap: 60px;
+	margin-bottom: 50px;
+}
+// .copyright {
+// }
+
+.callLink,
+.callBack {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+}
+
+.call,
+.callBack {
+	padding: 20px 57px;
+	border-radius: 36px;
+	font-size: 20px;
+	transition: opacity 0.2s;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.call {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+}
+.callBack {
+	color: #ff7889;
+}
+
+.bottomFooter {
+	display: flex;
+	gap: 26px;
+	justify-content: center;
+}

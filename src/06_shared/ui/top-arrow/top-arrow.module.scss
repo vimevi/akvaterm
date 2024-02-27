@@ -1,0 +1,30 @@
+.topArrow {
+	// transform: rotate(180deg);
+	position: fixed;
+	right: 170px;
+	bottom: 100px;
+
+	z-index: 100;
+
+	font-weight: bold;
+
+	button {
+		background-color: #ff7889;
+		width: 103px;
+		height: 103px;
+		font-size: 50px;
+		color: white;
+		border-radius: 50%;
+		transform: rotate(270deg);
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 4px rgba(0, 0, 0, 0.04),
+			0 20px 40px rgba(0, 0, 0, 0.08);
+		transition: all 0.2s;
+		&:hover {
+			background-color: #ff8394;
+		}
+		&:active {
+			translate: 0 3px;
+			border-left: 1px solid #924650;
+		}
+	}
+}

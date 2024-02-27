@@ -1,0 +1,84 @@
+.support {
+	background: url(./assets/support.png) no-repeat right;
+	height: 710px;
+	position: relative;
+}
+.support::after {
+	content: '';
+	height: 710px;
+	width: 7px;
+	background: linear-gradient(to right, rgba(3, 3, 3, 0), white);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.annotation {
+	font-family: 'Gilroy Semibold';
+	background-color: #639ee4;
+	width: 520px;
+	font-size: 35px;
+	color: white;
+	padding: 42px 77px 38px 88px;
+	border-radius: 34px;
+	margin-bottom: 170px;
+	position: relative;
+}
+.annotation::before {
+	content: '';
+	background: url(./assets/decor1.png) no-repeat right;
+	width: 200px;
+	top: 180px;
+	height: 220px;
+	position: absolute;
+	transition: transform 0.4s ease-in-out;
+	&:hover {
+		transform: translateY(-10px);
+	}
+}
+.annotation::after {
+	content: '';
+	background: url(./assets/decor2.png) no-repeat right;
+	width: 400px;
+	left: -368px;
+	top: 270px;
+	height: 340px;
+	position: absolute;
+}
+
+.startsWith {
+	margin: 0 auto;
+	width: fit-content;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.4s ease-in-out;
+	div {
+		color: #639ee4;
+		font-size: 120px;
+		line-height: 110px;
+		font-family: 'Gilroy Bold';
+	}
+	span {
+		text-align: right;
+	}
+	&:hover {
+		transform: translateY(-10px);
+	}
+}
+@media (max-width: 1880px) {
+	.annotation::after {
+		left: -350px;
+	}
+}
+@media (max-width: 1817px) {
+	.annotation::after {
+		left: -250px;
+	}
+}
+
+@media (max-width: 1617px) {
+	.annotation::after {
+		left: -216px;
+	}
+}

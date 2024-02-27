@@ -1,0 +1,30 @@
+.topProductsList {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+.toToCatalog {
+	background-color: #ff7889;
+	color: white;
+	font-size: 20px;
+	padding: 14px 40px 14px 48px;
+	border-radius: 60px;
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	transition: all 0.3s;
+	span {
+		padding-left: 10px;
+		transition: all 0.2s;
+	}
+}
+
+.toToCatalog:hover {
+	opacity: 0.9;
+	span {
+		transform: translateX(5px);
+	}
+}

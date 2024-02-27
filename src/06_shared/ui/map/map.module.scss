@@ -1,0 +1,25 @@
+.topMapBlur {
+	position: relative;
+}
+.topMapBlur::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	// background-color: #af4c4c;
+	background: linear-gradient(white, rgba(0, 0, 0, 0));
+	z-index: 1;
+}
+.topMapBlur::before {
+	content: '';
+	position: absolute;
+	top: -360px;
+	background: url('../../assets/images/wrench.png') no-repeat;
+	background-position: cover;
+	right: 0;
+	width: 378px;
+	height: 1000px;
+	z-index: 2;
+}
